@@ -1,0 +1,87 @@
+* {
+  margin: 0 auto;
+  background: #40566b;
+}
+.stopwatch {
+  &-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  &-time-display {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    color: white;
+    font-weight: 500;
+    background: #40566b;
+    font-size: 4em;
+    border: 4px solid lightgreen;
+    border-radius: 50%;
+
+    &-animation {
+      animation: blink 1.2s ease-in-out infinite;
+      @keyframes blink {
+        50% {
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+  &-timemeasure {
+    display: flex;
+    justify-content: stretch;
+    font-size: 0.3em;
+  }
+  &-buttons-container {
+    width: 90%;
+    margin: 0.6em auto;
+    text-align: center;
+  }
+  &-laps {
+    padding: 0;
+    text-align: center;
+    width: 50%;
+    list-style-type: none;
+  }
+  &-lap-item {
+    color: white;
+    font-size: 2em;
+    display: block;
+    position: relative;
+    margin-top: 0.5em;
+    &:after {
+      content: "";
+      background: white;
+      position: absolute;
+      margin: 0 auto;
+      text-align: center;
+      bottom: 0;
+      left: 30%;
+      height: 1px;
+      width: 40%;
+      transform: scale(1);
+      transition: 0.3s;
+    }
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+      &:after {
+        content: "";
+        background: white;
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        bottom: 0;
+        left: 25%;
+        height: 1px;
+        width: 50%;
+        transform: scale(1);
+        transition: 0.3s;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.default {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 1em;
+  width: 8em;
+  height: 3em;
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+  &:hover {
+    background: white;
+    color: #40566b;
+    cursor: pointer;
+  }
+}
+.clear {
+  background: lightcoral;
+  &:hover {
+    color: lightcoral;
+  }
+}
+.continue {
+  background: lightgreen;
+
+  &:hover {
+    color: lightgreen;
+  }
+}
+.start {
+  background: green;
+
+  &:hover {
+    color: green;
+  }
+}
+.reset {
+  background: red;
+
+  &:hover {
+    color: red;
+  }
+}
