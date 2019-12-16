@@ -1,5 +1,5 @@
 # VladNitsetskyi.github.io
-Intu test task
+Intu co uk test task
 
 To check this app online , please follow the link - https://vladnitsetskyi.github.io/
 
